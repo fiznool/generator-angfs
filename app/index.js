@@ -70,15 +70,15 @@ var Generator = module.exports = function Generator(args, options) {
     this.env.options.jade = this.options.jade;
   }
 
-  this.hookFor('angular-fullstack:common', {
+  this.hookFor('angfs:common', {
     args: args
   });
 
-  this.hookFor('angular-fullstack:main', {
+  this.hookFor('angfs:main', {
     args: args
   });
 
-  this.hookFor('angular-fullstack:controller', {
+  this.hookFor('angfs:controller', {
     args: args
   });
 
@@ -521,5 +521,5 @@ Generator.prototype.mongoFiles = function () {
   this.template('../../templates/express/controllers/session.js', 'lib/controllers/session.js');
   this.template('../../templates/express/controllers/users.js', 'lib/controllers/users.js');
   // tests
-  this.template('../../templates/express/test/user/model.js', 'test/server/user/model.js');  
+  this.template('../../templates/express/test/user/model.js', 'test/server/user/model.js');
 };

@@ -55,7 +55,7 @@ module.exports = function(app) {
 
   // Persist sessions with mongoStore
   app.use(session({
-    secret: 'angular-fullstack secret',
+    secret: 'angfs secret',
     store: new mongoStore({
       url: config.mongo.uri,
       collection: 'sessions'

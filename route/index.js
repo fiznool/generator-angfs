@@ -7,8 +7,8 @@ var angularUtils = require('../util.js');
 
 var Generator = module.exports = function Generator() {
   ScriptBase.apply(this, arguments);
-  this.hookFor('angular-fullstack:controller');
-  this.hookFor('angular-fullstack:view');
+  this.hookFor('angfs:controller');
+  this.hookFor('angfs:view');
 };
 
 util.inherits(Generator, ScriptBase);
