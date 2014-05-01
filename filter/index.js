@@ -5,6 +5,8 @@ var ScriptBase = require('../script-base.js');
 
 var Generator = module.exports = function Generator() {
   ScriptBase.apply(this, arguments);
+
+  this.name = this.name + '.filter';
 };
 
 util.inherits(Generator, ScriptBase);
